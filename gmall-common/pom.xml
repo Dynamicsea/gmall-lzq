@@ -12,6 +12,27 @@
     <groupId>com.atguigu.gmall</groupId>
     <!--所用工具类，公共依赖-->
     <artifactId>gmall-common</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
+    <!---->
+    <dependencies>
+        <!--防止lombok报错-->
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.8</version>
+            <!--否则别的模块无法引用该依赖-->
+            <!--<scope>provided</scope>-->
+        </dependency>
+
+        <!--防止swagger报错-->
+        <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+    </dependencies>
 
 </project>
